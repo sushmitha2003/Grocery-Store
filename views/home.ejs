@@ -1,0 +1,85 @@
+<html>
+		<head>
+			<title>Grocery store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 200px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		</style>
+        <body>
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-8" style="padding-top:10px;"><h2 class="display-6" style=font-weight:500;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FRESH CHOICE</h2></div>
+				</div><br>
+                <div class="row" style="padding-top:20px;">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="almonds.jpg"/>
+						<b><br>Good Life Almonds 500 g</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold; " name="cost"  value="339.00&#x20B9;"><del><small>549.00&#x20B9;</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Good Life Almonds 500 g">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="sugar.jpg" >
+						<b><br>Good Life Pure Crystal Sugar (M) 5 kg</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="215.00&#x20B9;"><del><small>&#x20B9;275.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Good Life Pure Crystal Sugar (M) 5 kg">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="butter.jpg" >
+						<b><br>Amul Butter 500 g (Carton)</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="255.00&#x20B9;"><del><small>&#x20B9;265.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Amul Butter 500 g (Carton)">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="noodles.jpg">
+						<b><br>Maggi 2-Minute Masala Instant Noodles 70 g</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="13.00&#x20B9;"><del><small>&#x20B9;14.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Maggi 2-Minute Masala Instant Noodles 70 g">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="detergent.jpg" >
+						<b><br>Surf Excel Matic Top Load Liquid Detergent 2 L</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="350.00&#x20B9;"><del><small>&#x20B9;430.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Surf Excel Matic Top Load Liquid Detergent 2 L">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="lays.jpg" >
+						<b><br>Lay's American Style Cream & Onion Potato Chips 104 g</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="33.00&#x20B9;"><del><small>&#x20B9;50.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Lay's American Style Cream & Onion Potato Chips 104 g">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="bournvita.jpg" >
+						<b><br>Bournvita 750 g</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="258.00&#x20B9;"><del><small>&#x20B9;320.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Bournvita 750 g">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="hns.jpg">
+						<b><br>Parle Hide & Seek 4 Fun Flavours Choco Chip Creme Sandwich Biscuits 400 g</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="70.00&#x20B9;"><del><small>&#x20B9;140.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Parle Hide & Seek 4 Fun Flavours Choco Chip Creme Sandwich Biscuits 400 g">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="juice.jpg">
+						<b><br>B Natural Guava Gush Juice 1 L</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="65.00&#x20B9;"><del><small>&#x20B9;130.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="B Natural Guava Gush Juice 1 L">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="flakes.jpg" >
+						<b><br>Kellogg's Corn Flakes 1.2 kg</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="349.00&#x20B9;"><del><small>&#x20B9;460.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Kellogg's Corn Flakes 1.2 kg">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="honey.jpg">
+						<b><br>Dabur Honey 1 kg</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="349.00&#x20B9;"><del><small>&#x20B9;475.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Dabur Honey 1 kg">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="harpic.jpg">
+						<b><br>Harpic Power Plus Original Disinfectant Toilet Cleaner 500 ml</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:75px; font-weight:bold;" name="cost" value="86.00&#x20B9;"><del><small>&#x20B9;93.00</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Harpic Power Plus Original Disinfectant Toilet Cleaner 500 ml">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit" class="btn btn-success" style="width:20%;font-weight: bold;" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>
